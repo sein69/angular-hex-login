@@ -1,0 +1,8 @@
+<h2>Login Form</h2>
+<form [formGroup]="loginGroup" class="login-form" (ngSubmit)="onSubmit()">
+    <mat-label>Email</mat-label>
+    <input formControlName="email" matInput placeholder="john@doe.com">
+    <mat-label>Password</mat-label>
+    <input formControlName="password" type="password" matInput placeholder="Ex. It makes me feel...">
+    <button mat-button type="submit"> Login</button>
+</form>
